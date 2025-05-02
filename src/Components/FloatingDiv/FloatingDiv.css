@@ -1,0 +1,21 @@
+.floatingdiv{
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(63, 222, 220);
+    box-shadow: var(--boxShadow);
+    border-radius: 15px;
+    /* padding: 0px 0px 0px 0px; */
+    /* height: 4.5rem; */
+ 
+
+}
+.floatingdiv img{
+    height: 30px;
+    transform: 0.8%;
+}
+.floatingdiv span {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 10px; /* Add space between text and images */
+}

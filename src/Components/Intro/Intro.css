@@ -1,0 +1,122 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+/* Left Side */
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button {
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Icons Section */
+.i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem; /* Added some gap */
+}
+
+.i-icons img {
+    width: 30px; /* Set a fixed width */
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.i-icons img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    cursor: pointer;
+}
+
+/* Right Side */
+.i-right {
+    flex: 01;
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    position: relative;
+}
+
+
+.i-right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: -120px; /* Moves the image up */
+}
+/* FloatingDiv Container */
+.floatingdiv {
+    position: absolute;
+    /* top: 50%; */
+    right: -50px; /* Adjust position */
+    transform: translateY(-50%);
+    display: flex;
+    /* align-items: center; */
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.floatingdiv img {
+    height: 40px;
+    width: 40px;
+}
+
+.floatingdiv span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+@media screen and (max-width:480px) {
+    .intro{
+        flex-direction: column;
+    }
+    .i-right{
+        transform: scale(0.8);
+    }
+    .i-right .blur{
+        display: none;
+    }
+}
+
